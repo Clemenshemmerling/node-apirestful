@@ -18,7 +18,7 @@ api.delete('/product/:productId', auth, productCtrl.deleteProduct);
 
 api.post('/singup', userCtrl.singUp);
 
-api.post('/sigin', userCtrl.singIn);
+api.post('/singin', userCtrl.singIn);
 
 api.get('/private', auth, function(req, res) {
     res.status(200).send({ message: 'Tienes acceso' });
